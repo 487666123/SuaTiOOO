@@ -4,19 +4,20 @@ import com.tool.HttpRequest;
 
 public class Aaa {
 
-	// ÓÃ»§ key (µÇÂ½ÕËºÅµÄÔÆÆÜÑ§Ôº¿É²é)
-	public static String keyString = "19E32DA4B73F691ECBE49B7C2C048007";
-	// ÕÂ½Ú
+	// ç”¨æˆ· key (ç™»é™†è´¦å·çš„äº‘æ –å­¦é™¢å¯æŸ¥)
+	// ä½¿ç”¨æŠ“åŒ…ç¨‹åº,è§‚å¯Ÿåœ¨ä½ è¿›å…¥åˆ·é¢˜é€‰æ‹©ç•Œé¢å‘é€çš„æ•°æ®,å†…æœ‰key,cId,chapterIdså’Œtitle
+	public static String keyString = "ä½ çš„ key";
+	// ç« èŠ‚
 	public static int cId = 8;
-	// ÌâÄ¿ĞĞ
+	// é¢˜ç›®è¡Œ
 	public static int chapterIds = 59;
-	// ÕÂ½ÚÃû³Æ
-	public static String title = "Ê¹ÓÃLayUI¿ª·¢È¨ÏŞ¹ÜÀí";
+	// ç« èŠ‚åç§°
+	public static String title = "ä½¿ç”¨LayUIå¼€å‘æƒé™ç®¡ç†";
 
 	/**
-	 * »ñÈ¡ÎÊÌâ
+	 * è·å–é—®é¢˜
 	 * 
-	 * @return ·µ»ØJSON×Ö·û´®
+	 * @return è¿”å›JSONå­—ç¬¦ä¸²
 	 */
 	public static String getQ() {
 		String u = "https://api.ysdjypt.com/StuAPI/BrushExercise";
@@ -26,9 +27,9 @@ public class Aaa {
 	}
 
 	/**
-	 * »ñÈ¡´ğ°¸
+	 * è·å–ç­”æ¡ˆ
 	 * 
-	 * @return ·µ»Ø´ğ°¸JSON×Ö·û´®
+	 * @return è¿”å›ç­”æ¡ˆJSONå­—ç¬¦ä¸²
 	 */
 	public static String getAn(int bEId) {
 		String u = "https://api.ysdjypt.com/StuAPI/AnalysisBrushExercise";
@@ -38,10 +39,10 @@ public class Aaa {
 	}
 
 	/**
-	 * Ìá½»´ğ°¸
+	 * æäº¤ç­”æ¡ˆ
 	 * 
-	 * @param bEId    µ±Ç°ÌâµÄID
-	 * @param jsonStr µ±Ç°ÌâµÄ´ğ°¸
+	 * @param bEId    å½“å‰é¢˜çš„ID
+	 * @param jsonStr å½“å‰é¢˜çš„ç­”æ¡ˆ
 	 * @return
 	 */
 	public static String requestAn(int bEId, String jsonStr) {
